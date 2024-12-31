@@ -6,6 +6,7 @@ class ChatHandler:
         self.ollama_url = "http://localhost:11434/api/generate"
         
     def get_response(self, message: str) -> str:
+        print("HELLO1")
         response = requests.post(
             self.ollama_url,
             json={
